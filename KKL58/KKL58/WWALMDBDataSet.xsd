@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WWALMDBDataSet" targetNamespace="http://tempuri.org/WWALMDBDataSet.xsd" xmlns:mstns="http://tempuri.org/WWALMDBDataSet.xsd" xmlns="http://tempuri.org/WWALMDBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=WIN-2XY6OEXJZUZ\SQLEXPRESS;Initial Catalog=WWALMDB;User ID=sa" IsAppSettingsProperty="false" Modifier="Assembly" Name="win-2xy6oexjzuz\sqlexpress.WWALMDB.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_AlarmEventHistoryTableAdapter" GeneratorDataComponentClassName="v_AlarmEventHistoryTableAdapter" Name="v_AlarmEventHistory" UserDataComponentName="v_AlarmEventHistoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="win-2xy6oexjzuz\sqlexpress.WWALMDB.dbo" DbObjectName="WWALMDB.dbo.v_AlarmEventHistory" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT EventStamp, AlarmState, TagName, Description, Area, Type, Value, CheckValue, Priority, Category, Provider, Operator, DomainName, UserFullName, UnAckDuration, User1, User2, User3, EventStampUTC, MilliSec, OperatorNode FROM dbo.v_AlarmEventHistory</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EventStamp" DataSetColumn="EventStamp" />
+              <Mapping SourceColumn="AlarmState" DataSetColumn="AlarmState" />
+              <Mapping SourceColumn="TagName" DataSetColumn="TagName" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Area" DataSetColumn="Area" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="Value" DataSetColumn="Value" />
+              <Mapping SourceColumn="CheckValue" DataSetColumn="CheckValue" />
+              <Mapping SourceColumn="Priority" DataSetColumn="Priority" />
+              <Mapping SourceColumn="Category" DataSetColumn="Category" />
+              <Mapping SourceColumn="Provider" DataSetColumn="Provider" />
+              <Mapping SourceColumn="Operator" DataSetColumn="Operator" />
+              <Mapping SourceColumn="DomainName" DataSetColumn="DomainName" />
+              <Mapping SourceColumn="UserFullName" DataSetColumn="UserFullName" />
+              <Mapping SourceColumn="UnAckDuration" DataSetColumn="UnAckDuration" />
+              <Mapping SourceColumn="User1" DataSetColumn="User1" />
+              <Mapping SourceColumn="User2" DataSetColumn="User2" />
+              <Mapping SourceColumn="User3" DataSetColumn="User3" />
+              <Mapping SourceColumn="EventStampUTC" DataSetColumn="EventStampUTC" />
+              <Mapping SourceColumn="MilliSec" DataSetColumn="MilliSec" />
+              <Mapping SourceColumn="OperatorNode" DataSetColumn="OperatorNode" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_AlarmHistoryTableAdapter" GeneratorDataComponentClassName="v_AlarmHistoryTableAdapter" Name="v_AlarmHistory" UserDataComponentName="v_AlarmHistoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="win-2xy6oexjzuz\sqlexpress.WWALMDB.dbo" DbObjectName="WWALMDB.dbo.v_AlarmHistory" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT EventStamp, AlarmState, TagName, Description, Area, Type, Value, CheckValue, Priority, Category, Provider, Operator, DomainName, UserFullName, UnAckDuration, User1, User2, User3, EventStampUTC, MilliSec, OperatorNode FROM dbo.v_AlarmHistory</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EventStamp" DataSetColumn="EventStamp" />
+              <Mapping SourceColumn="AlarmState" DataSetColumn="AlarmState" />
+              <Mapping SourceColumn="TagName" DataSetColumn="TagName" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Area" DataSetColumn="Area" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="Value" DataSetColumn="Value" />
+              <Mapping SourceColumn="CheckValue" DataSetColumn="CheckValue" />
+              <Mapping SourceColumn="Priority" DataSetColumn="Priority" />
+              <Mapping SourceColumn="Category" DataSetColumn="Category" />
+              <Mapping SourceColumn="Provider" DataSetColumn="Provider" />
+              <Mapping SourceColumn="Operator" DataSetColumn="Operator" />
+              <Mapping SourceColumn="DomainName" DataSetColumn="DomainName" />
+              <Mapping SourceColumn="UserFullName" DataSetColumn="UserFullName" />
+              <Mapping SourceColumn="UnAckDuration" DataSetColumn="UnAckDuration" />
+              <Mapping SourceColumn="User1" DataSetColumn="User1" />
+              <Mapping SourceColumn="User2" DataSetColumn="User2" />
+              <Mapping SourceColumn="User3" DataSetColumn="User3" />
+              <Mapping SourceColumn="EventStampUTC" DataSetColumn="EventStampUTC" />
+              <Mapping SourceColumn="MilliSec" DataSetColumn="MilliSec" />
+              <Mapping SourceColumn="OperatorNode" DataSetColumn="OperatorNode" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_EventHistoryTableAdapter" GeneratorDataComponentClassName="v_EventHistoryTableAdapter" Name="v_EventHistory" UserDataComponentName="v_EventHistoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="win-2xy6oexjzuz\sqlexpress.WWALMDB.dbo" DbObjectName="WWALMDB.dbo.v_EventHistory" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT EventStamp, TagName, Description, Area, Type, Value, CheckValue, Priority, Category, Provider, Operator, DomainName, UserFullName, User1, User2, User3, EventStampUTC, MilliSec, OperatorNode FROM dbo.v_EventHistory</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EventStamp" DataSetColumn="EventStamp" />
+              <Mapping SourceColumn="TagName" DataSetColumn="TagName" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Area" DataSetColumn="Area" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="Value" DataSetColumn="Value" />
+              <Mapping SourceColumn="CheckValue" DataSetColumn="CheckValue" />
+              <Mapping SourceColumn="Priority" DataSetColumn="Priority" />
+              <Mapping SourceColumn="Category" DataSetColumn="Category" />
+              <Mapping SourceColumn="Provider" DataSetColumn="Provider" />
+              <Mapping SourceColumn="Operator" DataSetColumn="Operator" />
+              <Mapping SourceColumn="DomainName" DataSetColumn="DomainName" />
+              <Mapping SourceColumn="UserFullName" DataSetColumn="UserFullName" />
+              <Mapping SourceColumn="User1" DataSetColumn="User1" />
+              <Mapping SourceColumn="User2" DataSetColumn="User2" />
+              <Mapping SourceColumn="User3" DataSetColumn="User3" />
+              <Mapping SourceColumn="EventStampUTC" DataSetColumn="EventStampUTC" />
+              <Mapping SourceColumn="MilliSec" DataSetColumn="MilliSec" />
+              <Mapping SourceColumn="OperatorNode" DataSetColumn="OperatorNode" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WWALMDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="WWALMDBDataSet" msprop:Generator_UserDSName="WWALMDBDataSet" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_AlarmEventHistory" msprop:Generator_UserTableName="v_AlarmEventHistory" msprop:Generator_RowDeletedName="v_AlarmEventHistoryRowDeleted" msprop:Generator_TableClassName="v_AlarmEventHistoryDataTable" msprop:Generator_RowChangedName="v_AlarmEventHistoryRowChanged" msprop:Generator_RowClassName="v_AlarmEventHistoryRow" msprop:Generator_RowChangingName="v_AlarmEventHistoryRowChanging" msprop:Generator_RowEvArgName="v_AlarmEventHistoryRowChangeEvent" msprop:Generator_RowEvHandlerName="v_AlarmEventHistoryRowChangeEventHandler" msprop:Generator_TablePropName="v_AlarmEventHistory" msprop:Generator_TableVarName="tablev_AlarmEventHistory" msprop:Generator_RowDeletingName="v_AlarmEventHistoryRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventStamp" msprop:Generator_UserColumnName="EventStamp" msprop:Generator_ColumnPropNameInRow="EventStamp" msprop:Generator_ColumnVarNameInTable="columnEventStamp" msprop:Generator_ColumnPropNameInTable="EventStampColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AlarmState" msprop:Generator_UserColumnName="AlarmState" msprop:Generator_ColumnPropNameInRow="AlarmState" msprop:Generator_ColumnVarNameInTable="columnAlarmState" msprop:Generator_ColumnPropNameInTable="AlarmStateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TagName" msprop:Generator_UserColumnName="TagName" msprop:Generator_ColumnPropNameInRow="TagName" msprop:Generator_ColumnVarNameInTable="columnTagName" msprop:Generator_ColumnPropNameInTable="TagNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="132" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Area" msprop:Generator_UserColumnName="Area" msprop:Generator_ColumnPropNameInRow="Area" msprop:Generator_ColumnVarNameInTable="columnArea" msprop:Generator_ColumnPropNameInTable="AreaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_UserColumnName="Type" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInTable="TypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Value" msprop:Generator_UserColumnName="Value" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInTable="ValueColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="131" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CheckValue" msprop:Generator_UserColumnName="CheckValue" msprop:Generator_ColumnPropNameInRow="CheckValue" msprop:Generator_ColumnVarNameInTable="columnCheckValue" msprop:Generator_ColumnPropNameInTable="CheckValueColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="131" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Priority" msprop:Generator_UserColumnName="Priority" msprop:Generator_ColumnPropNameInRow="Priority" msprop:Generator_ColumnVarNameInTable="columnPriority" msprop:Generator_ColumnPropNameInTable="PriorityColumn" type="xs:short" />
+              <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInTable="CategoryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Provider" msprop:Generator_UserColumnName="Provider" msprop:Generator_ColumnPropNameInRow="Provider" msprop:Generator_ColumnVarNameInTable="columnProvider" msprop:Generator_ColumnPropNameInTable="ProviderColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Operator" msprop:Generator_UserColumnName="Operator" msprop:Generator_ColumnPropNameInRow="_Operator" msprop:Generator_ColumnVarNameInTable="columnOperator" msprop:Generator_ColumnPropNameInTable="OperatorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="131" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DomainName" msprop:Generator_UserColumnName="DomainName" msprop:Generator_ColumnPropNameInRow="DomainName" msprop:Generator_ColumnVarNameInTable="columnDomainName" msprop:Generator_ColumnPropNameInTable="DomainNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="155" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserFullName" msprop:Generator_UserColumnName="UserFullName" msprop:Generator_ColumnPropNameInRow="UserFullName" msprop:Generator_ColumnVarNameInTable="columnUserFullName" msprop:Generator_ColumnPropNameInTable="UserFullNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnAckDuration" msprop:Generator_UserColumnName="UnAckDuration" msprop:Generator_ColumnPropNameInRow="UnAckDuration" msprop:Generator_ColumnVarNameInTable="columnUnAckDuration" msprop:Generator_ColumnPropNameInTable="UnAckDurationColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="17" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="User1" msprop:Generator_UserColumnName="User1" msprop:Generator_ColumnPropNameInRow="User1" msprop:Generator_ColumnVarNameInTable="columnUser1" msprop:Generator_ColumnPropNameInTable="User1Column" type="xs:double" minOccurs="0" />
+              <xs:element name="User2" msprop:Generator_UserColumnName="User2" msprop:Generator_ColumnPropNameInRow="User2" msprop:Generator_ColumnVarNameInTable="columnUser2" msprop:Generator_ColumnPropNameInTable="User2Column" type="xs:double" minOccurs="0" />
+              <xs:element name="User3" msprop:Generator_UserColumnName="User3" msprop:Generator_ColumnPropNameInRow="User3" msprop:Generator_ColumnVarNameInTable="columnUser3" msprop:Generator_ColumnPropNameInTable="User3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="131" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EventStampUTC" msprop:Generator_UserColumnName="EventStampUTC" msprop:Generator_ColumnPropNameInRow="EventStampUTC" msprop:Generator_ColumnVarNameInTable="columnEventStampUTC" msprop:Generator_ColumnPropNameInTable="EventStampUTCColumn" type="xs:dateTime" />
+              <xs:element name="MilliSec" msprop:Generator_UserColumnName="MilliSec" msprop:Generator_ColumnPropNameInRow="MilliSec" msprop:Generator_ColumnVarNameInTable="columnMilliSec" msprop:Generator_ColumnPropNameInTable="MilliSecColumn" type="xs:short" />
+              <xs:element name="OperatorNode" msprop:Generator_UserColumnName="OperatorNode" msprop:Generator_ColumnPropNameInRow="OperatorNode" msprop:Generator_ColumnVarNameInTable="columnOperatorNode" msprop:Generator_ColumnPropNameInTable="OperatorNodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="v_AlarmHistory" msprop:Generator_UserTableName="v_AlarmHistory" msprop:Generator_RowDeletedName="v_AlarmHistoryRowDeleted" msprop:Generator_TableClassName="v_AlarmHistoryDataTable" msprop:Generator_RowChangedName="v_AlarmHistoryRowChanged" msprop:Generator_RowClassName="v_AlarmHistoryRow" msprop:Generator_RowChangingName="v_AlarmHistoryRowChanging" msprop:Generator_RowEvArgName="v_AlarmHistoryRowChangeEvent" msprop:Generator_RowEvHandlerName="v_AlarmHistoryRowChangeEventHandler" msprop:Generator_TablePropName="v_AlarmHistory" msprop:Generator_TableVarName="tablev_AlarmHistory" msprop:Generator_RowDeletingName="v_AlarmHistoryRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventStamp" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EventStamp" msprop:Generator_ColumnPropNameInRow="EventStamp" msprop:Generator_ColumnVarNameInTable="columnEventStamp" msprop:Generator_ColumnPropNameInTable="EventStampColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AlarmState" msdata:ReadOnly="true" msprop:Generator_UserColumnName="AlarmState" msprop:Generator_ColumnPropNameInRow="AlarmState" msprop:Generator_ColumnVarNameInTable="columnAlarmState" msprop:Generator_ColumnPropNameInTable="AlarmStateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TagName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TagName" msprop:Generator_ColumnPropNameInRow="TagName" msprop:Generator_ColumnVarNameInTable="columnTagName" msprop:Generator_ColumnPropNameInTable="TagNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="132" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Area" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Area" msprop:Generator_ColumnPropNameInRow="Area" msprop:Generator_ColumnVarNameInTable="columnArea" msprop:Generator_ColumnPropNameInTable="AreaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Type" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInTable="TypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Value" msprop:Generator_UserColumnName="Value" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInTable="ValueColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="131" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CheckValue" msprop:Generator_UserColumnName="CheckValue" msprop:Generator_ColumnPropNameInRow="CheckValue" msprop:Generator_ColumnVarNameInTable="columnCheckValue" msprop:Generator_ColumnPropNameInTable="CheckValueColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="131" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Priority" msprop:Generator_UserColumnName="Priority" msprop:Generator_ColumnPropNameInRow="Priority" msprop:Generator_ColumnVarNameInTable="columnPriority" msprop:Generator_ColumnPropNameInTable="PriorityColumn" type="xs:short" />
+              <xs:element name="Category" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInTable="CategoryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Provider" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Provider" msprop:Generator_ColumnPropNameInRow="Provider" msprop:Generator_ColumnVarNameInTable="columnProvider" msprop:Generator_ColumnPropNameInTable="ProviderColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Operator" msprop:Generator_UserColumnName="Operator" msprop:Generator_ColumnPropNameInRow="_Operator" msprop:Generator_ColumnVarNameInTable="columnOperator" msprop:Generator_ColumnPropNameInTable="OperatorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="131" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DomainName" msprop:Generator_UserColumnName="DomainName" msprop:Generator_ColumnPropNameInRow="DomainName" msprop:Generator_ColumnVarNameInTable="columnDomainName" msprop:Generator_ColumnPropNameInTable="DomainNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="155" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserFullName" msprop:Generator_UserColumnName="UserFullName" msprop:Generator_ColumnPropNameInRow="UserFullName" msprop:Generator_ColumnVarNameInTable="columnUserFullName" msprop:Generator_ColumnPropNameInTable="UserFullNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnAckDuration" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UnAckDuration" msprop:Generator_ColumnPropNameInRow="UnAckDuration" msprop:Generator_ColumnVarNameInTable="columnUnAckDuration" msprop:Generator_ColumnPropNameInTable="UnAckDurationColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="17" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="User1" msprop:Generator_UserColumnName="User1" msprop:Generator_ColumnPropNameInRow="User1" msprop:Generator_ColumnVarNameInTable="columnUser1" msprop:Generator_ColumnPropNameInTable="User1Column" type="xs:double" minOccurs="0" />
+              <xs:element name="User2" msprop:Generator_UserColumnName="User2" msprop:Generator_ColumnPropNameInRow="User2" msprop:Generator_ColumnVarNameInTable="columnUser2" msprop:Generator_ColumnPropNameInTable="User2Column" type="xs:double" minOccurs="0" />
+              <xs:element name="User3" msprop:Generator_UserColumnName="User3" msprop:Generator_ColumnPropNameInRow="User3" msprop:Generator_ColumnVarNameInTable="columnUser3" msprop:Generator_ColumnPropNameInTable="User3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="131" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EventStampUTC" msprop:Generator_UserColumnName="EventStampUTC" msprop:Generator_ColumnPropNameInRow="EventStampUTC" msprop:Generator_ColumnVarNameInTable="columnEventStampUTC" msprop:Generator_ColumnPropNameInTable="EventStampUTCColumn" type="xs:dateTime" />
+              <xs:element name="MilliSec" msprop:Generator_UserColumnName="MilliSec" msprop:Generator_ColumnPropNameInRow="MilliSec" msprop:Generator_ColumnVarNameInTable="columnMilliSec" msprop:Generator_ColumnPropNameInTable="MilliSecColumn" type="xs:short" />
+              <xs:element name="OperatorNode" msprop:Generator_UserColumnName="OperatorNode" msprop:Generator_ColumnPropNameInRow="OperatorNode" msprop:Generator_ColumnVarNameInTable="columnOperatorNode" msprop:Generator_ColumnPropNameInTable="OperatorNodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="v_EventHistory" msprop:Generator_UserTableName="v_EventHistory" msprop:Generator_RowDeletedName="v_EventHistoryRowDeleted" msprop:Generator_TableClassName="v_EventHistoryDataTable" msprop:Generator_RowChangedName="v_EventHistoryRowChanged" msprop:Generator_RowClassName="v_EventHistoryRow" msprop:Generator_RowChangingName="v_EventHistoryRowChanging" msprop:Generator_RowEvArgName="v_EventHistoryRowChangeEvent" msprop:Generator_RowEvHandlerName="v_EventHistoryRowChangeEventHandler" msprop:Generator_TablePropName="v_EventHistory" msprop:Generator_TableVarName="tablev_EventHistory" msprop:Generator_RowDeletingName="v_EventHistoryRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventStamp" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EventStamp" msprop:Generator_ColumnPropNameInRow="EventStamp" msprop:Generator_ColumnVarNameInTable="columnEventStamp" msprop:Generator_ColumnPropNameInTable="EventStampColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TagName" msprop:Generator_UserColumnName="TagName" msprop:Generator_ColumnPropNameInRow="TagName" msprop:Generator_ColumnVarNameInTable="columnTagName" msprop:Generator_ColumnPropNameInTable="TagNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="132" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Area" msprop:Generator_UserColumnName="Area" msprop:Generator_ColumnPropNameInRow="Area" msprop:Generator_ColumnVarNameInTable="columnArea" msprop:Generator_ColumnPropNameInTable="AreaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Type" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInTable="TypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Value" msprop:Generator_UserColumnName="Value" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInTable="ValueColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="131" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CheckValue" msprop:Generator_UserColumnName="CheckValue" msprop:Generator_ColumnPropNameInRow="CheckValue" msprop:Generator_ColumnVarNameInTable="columnCheckValue" msprop:Generator_ColumnPropNameInTable="CheckValueColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="131" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Priority" msprop:Generator_UserColumnName="Priority" msprop:Generator_ColumnPropNameInRow="Priority" msprop:Generator_ColumnVarNameInTable="columnPriority" msprop:Generator_ColumnPropNameInTable="PriorityColumn" type="xs:short" />
+              <xs:element name="Category" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInTable="CategoryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Provider" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Provider" msprop:Generator_ColumnPropNameInRow="Provider" msprop:Generator_ColumnVarNameInTable="columnProvider" msprop:Generator_ColumnPropNameInTable="ProviderColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Operator" msprop:Generator_UserColumnName="Operator" msprop:Generator_ColumnPropNameInRow="_Operator" msprop:Generator_ColumnVarNameInTable="columnOperator" msprop:Generator_ColumnPropNameInTable="OperatorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="131" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DomainName" msprop:Generator_UserColumnName="DomainName" msprop:Generator_ColumnPropNameInRow="DomainName" msprop:Generator_ColumnVarNameInTable="columnDomainName" msprop:Generator_ColumnPropNameInTable="DomainNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="155" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserFullName" msprop:Generator_UserColumnName="UserFullName" msprop:Generator_ColumnPropNameInRow="UserFullName" msprop:Generator_ColumnVarNameInTable="columnUserFullName" msprop:Generator_ColumnPropNameInTable="UserFullNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="User1" msprop:Generator_UserColumnName="User1" msprop:Generator_ColumnPropNameInRow="User1" msprop:Generator_ColumnVarNameInTable="columnUser1" msprop:Generator_ColumnPropNameInTable="User1Column" type="xs:double" minOccurs="0" />
+              <xs:element name="User2" msprop:Generator_UserColumnName="User2" msprop:Generator_ColumnPropNameInRow="User2" msprop:Generator_ColumnVarNameInTable="columnUser2" msprop:Generator_ColumnPropNameInTable="User2Column" type="xs:double" minOccurs="0" />
+              <xs:element name="User3" msprop:Generator_UserColumnName="User3" msprop:Generator_ColumnPropNameInRow="User3" msprop:Generator_ColumnVarNameInTable="columnUser3" msprop:Generator_ColumnPropNameInTable="User3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="131" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EventStampUTC" msprop:Generator_UserColumnName="EventStampUTC" msprop:Generator_ColumnPropNameInRow="EventStampUTC" msprop:Generator_ColumnVarNameInTable="columnEventStampUTC" msprop:Generator_ColumnPropNameInTable="EventStampUTCColumn" type="xs:dateTime" />
+              <xs:element name="MilliSec" msprop:Generator_UserColumnName="MilliSec" msprop:Generator_ColumnPropNameInRow="MilliSec" msprop:Generator_ColumnVarNameInTable="columnMilliSec" msprop:Generator_ColumnPropNameInTable="MilliSecColumn" type="xs:short" />
+              <xs:element name="OperatorNode" msprop:Generator_UserColumnName="OperatorNode" msprop:Generator_ColumnPropNameInRow="OperatorNode" msprop:Generator_ColumnVarNameInTable="columnOperatorNode" msprop:Generator_ColumnPropNameInTable="OperatorNodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
